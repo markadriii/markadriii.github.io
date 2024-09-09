@@ -1,0 +1,193 @@
+{
+	"home": {
+		"name": "Mark Adrian Escobar",
+		"header": "Developer",
+		"info": "I'm into software development and I love coding to make everyday tasks more efficient.",
+		"place": "De La Salle University - Manila",
+		"href": "https://www.dlsu.edu.ph/"
+	},
+	"skills": {
+		"Languages": [
+			{
+				"icon": "devicon:c",
+				"name": "C",
+				"href": "asdasd"
+			},
+			{
+				"icon": "devicon:java",
+				"name": "Java",
+				"href": "https://docs.oracle.com/en/java/"
+			},
+			{
+				"icon": "devicon:html5",
+				"name": "HTML5",
+				"href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+			},
+			{
+				"icon": "devicon:css3",
+				"name": "CSS3",
+				"href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+			},
+			{
+				"icon": "devicon:javascript",
+				"name": "JavaScript",
+				"href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+			},
+			{
+				"icon": "devicon:typescript",
+				"name": "TypeScript",
+				"href": "https://www.typescriptlang.org/"
+			},
+			{
+				"icon": "devicon:python",
+				"name": "Python",
+				"href": "https://docs.python.org/3/"
+			}
+		],
+		"Frameworks": [
+			{
+				"icon": "devicon:express",
+				"name": "Express",
+				"href": "https://expressjs.com/"
+			},
+			{
+				"icon": "devicon:svelte",
+				"name": "Svelte",
+				"href": "https://svelte.dev/docs/introduction"
+			},
+			{
+				"icon": "devicon:tailwindcss",
+				"name": "TailwindCSS",
+				"href": "https://tailwindcss.com/docs/installation"
+			}
+		],
+		"Databases": [
+			{
+				"icon": "devicon:mysql",
+				"name": "MySQL",
+				"href": "https://www.mysql.com/"
+			},
+			{
+				"icon": "devicon:mongodb",
+				"name": "MongoDB",
+				"href": "https://www.mongodb.com/"
+			},
+			{
+				"icon": "devicon:firebase",
+				"name": "Firebase",
+				"href": "https://firebase.google.com/"
+			}
+		],
+		"Others": [
+			{
+				"icon": "devicon:nodejs",
+				"name": "NodeJS",
+				"href": "https://nodejs.org/en"
+			},
+			{
+				"icon": "devicon:github",
+				"name": "GitHub",
+				"href": "https://github.com/"
+			},
+			{
+				"icon": "devicon:docker",
+				"name": "Docker",
+				"href": "https://www.docker.com/"
+			}
+		]
+	},
+	"experience": [
+		{
+			"src": "./assets/dlsu_logo.png",
+			"alt": "DLSU Logo",
+			"href": "https://www.dlsu.edu.ph/research/research-centers/adric/te3d/",
+			"name": "TE3D House",
+			"position": "Developer Intern",
+			"info": "Restructured and optimized existing conversational flows using Dialogflow CX, refined server-side operations using Python (FastAPI), and utilized JavaScript to automate tasks for improved efficiency.",
+			"date": "Sep 2023 – Dec 2023",
+			"stack": [
+				{
+					"icon": "logos:dialogflow",
+					"name": "Dialogflow",
+					"href": "https://cloud.google.com/dialogflow"
+				},
+				{
+					"icon": "devicon:fastapi",
+					"name": "FastAPI",
+					"href": "https://fastapi.tiangolo.com/"
+				},
+				{
+					"icon": "devicon:python",
+					"name": "Python",
+					"href": "https://docs.python.org/3/"
+				},
+				{
+					"icon": "devicon:javascript",
+					"name": "JavaScript",
+					"href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+				}
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "Developer Portfolio",
+			"info": "Personal Project",
+			"description": "A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.",
+			"href": "some-link",
+			"date": "Aug 2024",
+			"image": "./assets/Screenshot_11.png",
+			"stack": [
+				{
+					"icon": "devicon:svelte",
+					"name": "Svelte",
+					"href": "https://svelte.dev/docs/introduction"
+				},
+				{
+					"icon": "devicon:tailwindcss",
+					"name": "TailwindCSS",
+					"href": "https://tailwindcss.com/docs/installation"
+				}
+			]
+		}
+	],
+	"navigation": [
+		{
+			"icon": "mdi:account-circle-outline",
+			"name": "About"
+		},
+		{
+			"icon": "mdi:brain",
+			"name": "Skills"
+		},
+		{
+			"icon": "mdi:work-outline",
+			"name": "Experience"
+		},
+		{
+			"icon": "mdi:view-grid-outline",
+			"name": "Projects"
+		},
+		{
+			"icon": "mdi:message-text-outline",
+			"name": "Contact"
+		}
+	],
+	"social": [
+		{
+			"icon": "mdi:linkedin",
+			"name": "LinkedIn",
+			"href": "https://www.linkedin.com/in/mark-adrian-escobar-9b567420a"
+		},
+		{
+			"icon": "mdi:github",
+			"name": "GitHub",
+			"href": "https://github.com/markadriii"
+		},
+		{
+			"icon": "mdi:envelope-outline",
+			"name": "GitHub",
+			"href": "mailto:markadrianescobar@gmail.com"
+		}
+	]
+}
