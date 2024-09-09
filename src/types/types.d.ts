@@ -12,7 +12,7 @@ export type NavigationLink = NavigationItem;
 export type SocialLink = SocialItem;
 export type Skill = SkillItem;
 
-type SkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
+export type SkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
 
 export type Skills = {
 	[key in SkillCategory]: Skill[];
