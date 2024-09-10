@@ -7,10 +7,6 @@
 		scroll-behavior: smooth;
 	}
 
-	body {
-		@apply bg-primary-500;
-	}
-
 	@font-face {
 		font-family: 'Inter';
 		src: url('/fonts/inter/inter.ttf') format('truetype');

@@ -20,12 +20,12 @@
 				I earned (joke wala pa pls lang baka naman) a Bachelor of Science in Computer
 				Science, major in Software Technology, from <a
 					href="asd"
-					class="font-semibold text-secondary-300 hover:text-tertiary-500"
+					class="font-semibold text-tertiary-300 hover:text-primary-500"
 					>De La Salle University - Manila</a
 				>
 				in 2024. Prior to that, I completed the STEM track during my Senior High School years
 				at
-				<a href="asd" class="font-semibold text-secondary-300 hover:text-tertiary-500"
+				<a href="asd" class="font-semibold text-tertiary-300 hover:text-primary-500"
 					>Darwin International School</a
 				> in 2019.
 			</p>

@@ -10,7 +10,7 @@
 
 <SectionContainer {id} {spacing}>
 	<nav>
-		<ul class="w-56 space-y-1 text-sm uppercase text-surface-500">
+		<ul class="w-56 space-y-1 text-sm uppercase">
 			{#each data as item}
 				<li class="w-fit p-2">
 					<NavigationItem {item} />
