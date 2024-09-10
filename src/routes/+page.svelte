@@ -5,6 +5,8 @@
 	import Social from '$lib/components/sections/social.svelte';
 	import About from '$lib/components/sections/about.svelte';
 	import Skills from '$lib/components/sections/skills.svelte';
+	import Experience from '$lib/components/sections/experience.svelte';
+	import Projects from '$lib/components/sections/projects.svelte';
 
 	let data: any = null;
 
@@ -37,6 +39,8 @@
 		<main class="overflow-y-auto px-8 py-20">
 			<About id="about" spacing={'mb-16'} />
 			<Skills id="skills" data={data.skills} spacing={'mb-16'} />
+			<Experience id="experience" data={data.experience} spacing={'mb-16'} />
+			<Projects id="projects" data={data.projects} spacing={'mb-16'} />
 		</main>
 	</div>
 {/if}

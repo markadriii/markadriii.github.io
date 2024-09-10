@@ -19,6 +19,8 @@ export type Skills = {
 };
 
 export type Experience = {
+	src: string;
+	alt: string;
 	href: string;
 	name: string;
 	position: string;
@@ -29,6 +31,8 @@ export type Experience = {
 };
 
 export type Project = {
+	src: string;
+	alt: string;
 	name: string;
 	info: string;
 	description: string;

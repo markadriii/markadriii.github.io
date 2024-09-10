@@ -11,7 +11,7 @@
 <a
 	href={item.href}
 	target="_blank"
-	class="{background} {textColor} flex w-fit items-center rounded-lg p-2 hover:bg-secondary-300/90"
+	class="{background} {textColor} flex w-fit items-center p-2 rounded-container-token hover:bg-secondary-300/90"
 >
 	<Icon icon={item.icon} height={iconSize} />
 	<span class="{space} {textSize} font-bold">{item.name}</span>
