@@ -21,19 +21,19 @@
 	.animate-character {
 		background-image: linear-gradient(
 			90deg,
-			hsl(0deg 100% 81%) 0%,
-			hsl(336deg 92% 81%) 18%,
-			hsl(297deg 56% 80%) 26%,
-			hsl(243deg 100% 87%) 33%,
-			hsl(245deg 100% 91%) 39%,
-			hsl(246deg 100% 96%) 44%,
-			hsl(0deg 0% 100%) 50%,
-			hsl(2deg 100% 93%) 56%,
-			hsl(1deg 100% 87%) 61%,
-			hsl(0deg 100% 81%) 67%,
-			hsl(336deg 92% 81%) 74%,
-			hsl(297deg 56% 80%) 82%,
-			hsl(243deg 100% 87%) 100%
+			hsl(325deg 100% 80%) 0%,
+			hsl(241deg 100% 88%) 18%,
+			hsl(192deg 100% 76%) 26%,
+			hsl(180deg 100% 80%) 33%,
+			hsl(192deg 100% 84%) 39%,
+			hsl(206deg 64% 87%) 44%,
+			hsl(225deg 10% 84%) 50%,
+			hsl(252deg 43% 85%) 56%,
+			hsl(290deg 56% 81%) 61%,
+			hsl(325deg 100% 80%) 67%,
+			hsl(241deg 100% 88%) 74%,
+			hsl(192deg 100% 76%) 82%,
+			hsl(180deg 100% 80%) 100%
 		);
 		background-size: 200% auto;
 		background-clip: text;

@@ -90,7 +90,9 @@
 					/>
 				</div>
 			</label>
-			<button type="submit" class="variant-filled btn w-fit rounded-container-token"
+			<button
+				type="submit"
+				class="variant-filled-primary btn btn-md w-fit font-semibold rounded-container-token hover:bg-primary-500/50 hover:text-on-surface-token"
 				>Submit</button
 			>
 		</form>
