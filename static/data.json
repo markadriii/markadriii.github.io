@@ -56,6 +56,11 @@
 				"href": "https://svelte.dev/docs/introduction"
 			},
 			{
+				"icon": "devicon:svelte",
+				"name": "SvelteKit",
+				"href": "https://kit.svelte.dev/docs/introduction"
+			},
+			{
 				"icon": "devicon:tailwindcss",
 				"name": "TailwindCSS",
 				"href": "https://tailwindcss.com/docs/installation"
@@ -136,12 +141,16 @@
 			"description": "A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.",
 			"href": "some-link",
 			"date": "Aug 2024",
-			"image": "./assets/Screenshot_11.png",
 			"stack": [
 				{
 					"icon": "devicon:svelte",
-					"name": "Svelte",
-					"href": "https://svelte.dev/docs/introduction"
+					"name": "SvelteKit",
+					"href": "https://kit.svelte.dev/docs/introduction"
+				},
+				{
+					"icon": "devicon:typescript",
+					"name": "TypeScript",
+					"href": "https://www.typescriptlang.org/"
 				},
 				{
 					"icon": "devicon:tailwindcss",

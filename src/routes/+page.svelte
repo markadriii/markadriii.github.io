@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import Profile from '$lib/components/sections/profile.svelte';
 	import Navigation from '$lib/components/sections/navigation.svelte';
 	import Social from '$lib/components/sections/social.svelte';
@@ -8,23 +8,20 @@
 	import Experience from '$lib/components/sections/experience.svelte';
 	import Projects from '$lib/components/sections/projects.svelte';
 	import Contact from '$lib/components/sections/contact.svelte';
+	import { fetchData } from '$lib/utils/data';
+	import { scrollActive } from '$lib/utils/scroll';
 
 	let data: any = null;
 
-	async function fetchData() {
-		try {
-			const response = await fetch('./data.json');
-			if (!response.ok) {
-				throw new Error('Failed to fetch data.');
-			}
-			data = await response.json();
-		} catch (error) {
-			console.error(error);
-		}
-	}
-
 	onMount(async () => {
-		await fetchData();
+		data = await fetchData();
+		window.addEventListener('scroll', scrollActive);
+	});
+
+	onDestroy(() => {
+		if (typeof window !== 'undefined') {
+			window.removeEventListener('scroll', scrollActive);
+		}
 	});
 </script>
 

@@ -5,7 +5,7 @@
 	export let item: Project;
 </script>
 
-<a href={item.href} target="_blank" class="group rounded-container-token hover:bg-primary-500/5">
+<a href={item.href} target="_blank" class="group rounded-container-token hover:bg-primary-900/5">
 	<article class="w-full shadow-md">
 		<header class="flex items-start space-x-8 px-6 py-4">
 			<img class="size-12 rounded-token" src={item.src} alt={item.alt} />
