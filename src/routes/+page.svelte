@@ -7,6 +7,7 @@
 	import Skills from '$lib/components/sections/skills.svelte';
 	import Experience from '$lib/components/sections/experience.svelte';
 	import Projects from '$lib/components/sections/projects.svelte';
+	import Contact from '$lib/components/sections/contact.svelte';
 
 	let data: any = null;
 
@@ -41,6 +42,7 @@
 			<Skills id="skills" data={data.skills} spacing={'mb-16'} />
 			<Experience id="experience" data={data.experience} spacing={'mb-16'} />
 			<Projects id="projects" data={data.projects} spacing={'mb-16'} />
+			<Contact id="contact" spacing={''} />
 		</main>
 	</div>
 {/if}
