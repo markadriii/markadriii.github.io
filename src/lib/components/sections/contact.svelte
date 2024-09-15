@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import emailjs from '@emailjs/browser';
+	import { PUBLIC_PUBLIC_KEY, PUBLIC_SERVICE_ID, PUBLIC_TEMPLATE_ID } from '$env/static/public';
 
 	export let id: string;
 	export let spacing: string;
@@ -12,11 +13,11 @@
 	const sendEmail = async (event: Event): Promise<void> => {
 		try {
 			const response = await emailjs.sendForm(
-				'TODO',
-				'TODO',
+				PUBLIC_SERVICE_ID,
+				PUBLIC_TEMPLATE_ID,
 				event.target as HTMLFormElement,
 				{
-					publicKey: 'TODO'
+					publicKey: PUBLIC_PUBLIC_KEY
 				}
 			);
 			console.log('Message sent!', response);
