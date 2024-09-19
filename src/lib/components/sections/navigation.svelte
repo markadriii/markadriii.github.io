@@ -6,14 +6,38 @@
 	export let data: NavigationLink[];
 	export let id: string;
 	export let spacing: string;
+
+	let isParentHovered = false;
+	let isItemHovered = false;
+
+	function handleGroupHover(isEntering: boolean) {
+		if (isEntering) {
+			isParentHovered = true;
+		} else {
+			isParentHovered = false;
+			isItemHovered = false;
+		}
+	}
+	function handleItemHover(isEntering: boolean) {
+		isItemHovered = isEntering;
+	}
+
+	$: isHovered = isParentHovered && isItemHovered;
 </script>
 
 <SectionContainer {id} {spacing}>
 	<nav>
-		<ul class="w-56 space-y-1 text-sm uppercase">
+		<ul
+			class="w-fit text-sm uppercase"
+			on:mouseenter={() => handleGroupHover(true)}
+			on:mouseleave={() => handleGroupHover(false)}
+		>
 			{#each data as item}
-				<li class="w-fit p-2">
-					<NavigationItem {item} />
+				<li
+					on:mouseenter={() => handleItemHover(true)}
+					on:mouseleave={() => handleItemHover(false)}
+				>
+					<NavigationItem {item} {isHovered} />
 				</li>
 			{/each}
 		</ul>
