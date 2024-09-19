@@ -18,7 +18,7 @@ export const baseTheme: CustomThemeConfig = {
 		'--on-success': '0 0 0',
 		'--on-warning': '0 0 0',
 		'--on-error': '0 0 0',
-		'--on-surface': '255 255 255',
+		'--on-surface': 'var(--color-tertiary-500)',
 		// =~= Theme Colors  =~=
 		// primary | #00ffff
 		'--color-primary-50': '217 255 255', // #d9ffff
