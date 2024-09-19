@@ -4,12 +4,8 @@
 	export let spacing: string;
 </script>
 
-<SectionContainer {id} {spacing}>
-	<div class="mx-w-md flex w-full flex-col items-center justify-center space-y-8">
-		<div class="w-full border-b-2 pb-2">
-			<h1 class="text-left text-xl font-bold">About me</h1>
-		</div>
-
+<SectionContainer {id} {spacing} let:ContentContainer>
+	<ContentContainer title={'About me'}>
 		<article class="flex flex-col items-start justify-center leading-relaxed antialiased">
 			<p class="mb-4">
 				Hi there, I'm Adrian! I'm enthusiastic about utilizing my skills and technical
@@ -30,5 +26,5 @@
 				> in 2019.
 			</p>
 		</article>
-	</div>
+	</ContentContainer>
 </SectionContainer>

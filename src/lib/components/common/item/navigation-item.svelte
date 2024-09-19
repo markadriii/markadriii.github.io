@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import type { NavigationItem } from '../../../types/types';
+	import type { NavigationItem } from '$lib/types';
 	import { activeNav } from '$lib/stores/nav';
 
 	export let item: NavigationItem;
-	export let isHovered;
+	export let isHovered: boolean;
 
 	$: isActive = $activeNav === item.name.toLowerCase();
 	$: linkClasses = `group flex items-start space-x-4 p-2 ${isActive && !isHovered ? 'text-primary-500' : 'text-current hover:text-primary-500'}`;

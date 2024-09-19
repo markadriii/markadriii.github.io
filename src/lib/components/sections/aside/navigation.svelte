@@ -1,14 +1,14 @@
 <script lang="ts">
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
-	import NavigationItem from '$lib/components/common/navigation-item.svelte';
-	import type { NavigationLink } from '../../../types/types';
+	import NavigationItem from '$lib/components/common/item/navigation-item.svelte';
+	import type { NavigationLink } from '$lib/types';
 
 	export let data: NavigationLink[];
 	export let id: string;
 	export let spacing: string;
 
-	let isParentHovered = false;
-	let isItemHovered = false;
+	let isParentHovered: boolean = false;
+	let isItemHovered: boolean = false;
 
 	function handleGroupHover(isEntering: boolean) {
 		if (isEntering) {

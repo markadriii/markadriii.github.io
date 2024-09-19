@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
-	import SocialItem from '$lib/components/common/social-item.svelte';
-	import type { SocialLink } from '../../../types/types';
+	import SocialItem from '$lib/components/common/item/social-item.svelte';
+	import type { SocialLink } from '$lib/types';
 
 	export let data: SocialLink[];
 	export let id: string;

@@ -106,10 +106,10 @@
 			"src": "./assets/dlsu_logo.png",
 			"alt": "DLSU Logo",
 			"href": "https://www.dlsu.edu.ph/research/research-centers/adric/te3d/",
-			"name": "TE3D House",
-			"position": "Developer Intern",
-			"info": "Restructured and optimized existing conversational flows using Dialogflow CX, refined server-side operations using Python (FastAPI), and utilized JavaScript to automate tasks for improved efficiency.",
+			"title": "TE3D House",
+			"subtitle": "Developer Intern",
 			"date": "Sep 2023 – Dec 2023",
+			"info": "Restructured and optimized existing conversational flows using Dialogflow CX, refined server-side operations using Python (FastAPI), and utilized JavaScript to automate tasks for improved efficiency.",
 			"stack": [
 				{
 					"icon": "logos:dialogflow",
@@ -136,11 +136,13 @@
 	],
 	"projects": [
 		{
-			"name": "Developer Portfolio",
-			"info": "Personal Project",
-			"description": "A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.",
+			"src": "",
+			"alt": "",
+			"title": "Developer Portfolio",
 			"href": "some-link",
+			"subtitle": "Personal Project",
 			"date": "Aug 2024",
+			"info": "A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.",
 			"stack": [
 				{
 					"icon": "devicon:svelte",

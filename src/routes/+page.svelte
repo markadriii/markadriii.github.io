@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
-	import Profile from '$lib/components/sections/profile.svelte';
-	import Navigation from '$lib/components/sections/navigation.svelte';
-	import Social from '$lib/components/sections/social.svelte';
-	import About from '$lib/components/sections/about.svelte';
-	import Skills from '$lib/components/sections/skills.svelte';
-	import Experience from '$lib/components/sections/experience.svelte';
-	import Projects from '$lib/components/sections/projects.svelte';
-	import Contact from '$lib/components/sections/contact.svelte';
+	import Profile from '$lib/components/sections/aside/profile.svelte';
+	import Navigation from '$lib/components/sections/aside/navigation.svelte';
+	import Social from '$lib/components/sections/aside/social.svelte';
+	import About from '$lib/components/sections/main/about.svelte';
+	import Skills from '$lib/components/sections/main/skills.svelte';
+	import Experience from '$lib/components/sections/main/experience.svelte';
+	import Projects from '$lib/components/sections/main/projects.svelte';
+	import Contact from '$lib/components/sections/main/contact.svelte';
+	import Credits from '$lib/components/sections/main/credits.svelte';
 	import { fetchData } from '$lib/utils/data';
 	import { scrollActive } from '$lib/utils/scroll';
-	import Credits from '$lib/components/sections/credits.svelte';
 
 	let data: any = null;
 

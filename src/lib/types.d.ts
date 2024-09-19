@@ -18,26 +18,13 @@ export type Skills = {
 	[key in SkillCategory]: Skill[];
 };
 
-export type Experience = {
+export type Content = {
 	src: string;
 	alt: string;
 	href: string;
-	name: string;
-	position: string;
-	info: string;
+	title: string;
+	subtitle: string;
 	date: string;
-	stack: Skill[];
-	logo: IconItem;
-};
-
-export type Project = {
-	src: string;
-	alt: string;
-	name: string;
 	info: string;
-	description: string;
-	href: string;
-	date: string;
-	image: string;
 	stack: Skill[];
 };
