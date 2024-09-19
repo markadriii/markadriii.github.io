@@ -10,6 +10,7 @@
 	import Contact from '$lib/components/sections/contact.svelte';
 	import { fetchData } from '$lib/utils/data';
 	import { scrollActive } from '$lib/utils/scroll';
+	import Credits from '$lib/components/sections/credits.svelte';
 
 	let data: any = null;
 
@@ -39,7 +40,8 @@
 			<Skills id="skills" data={data.skills} spacing={'mb-16'} />
 			<Experience id="experience" data={data.experience} spacing={'mb-16'} />
 			<Projects id="projects" data={data.projects} spacing={'mb-16'} />
-			<Contact id="contact" spacing={''} />
+			<Contact id="contact" spacing={'mb-16'} />
+			<Credits id="credits" />
 		</main>
 	</div>
 {/if}
