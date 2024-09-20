@@ -3,10 +3,6 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-	html {
-		scroll-behavior: smooth;
-	}
-
 	@font-face {
 		font-family: 'Inter';
 		src: url('/fonts/inter/inter.ttf') format('truetype');
