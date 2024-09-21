@@ -14,11 +14,11 @@
 		class="{height} input-group input-group-divider grid-cols-[1fr_auto] rounded-container-token"
 	>
 		{#if type === 'text'}
-			<input type="text" name={id} class="p-2 text-sm" {placeholder} bind:value />
+			<input type="text" name={id} class="p-2 text-sm" {placeholder} bind:value required />
 		{:else if type === 'email'}
-			<input type="email" name={id} class="p-2 text-sm" {placeholder} bind:value />
+			<input type="email" name={id} class="p-2 text-sm" {placeholder} bind:value required />
 		{:else if type === 'textarea'}
-			<textarea class="textarea p-2" name={id} rows="4" {placeholder} bind:value />
+			<textarea class="textarea p-2" name={id} rows="4" {placeholder} bind:value required />
 		{/if}
 	</div>
 </label>
