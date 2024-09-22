@@ -23,7 +23,7 @@ export function parseText(paragraphs: string[]): TPart[] {
 		if (match) {
 			return {
 				type: 'link',
-				href: match[2],
+				url: match[2],
 				text: match[1]
 			};
 		} else {
