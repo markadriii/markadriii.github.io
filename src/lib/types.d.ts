@@ -1,30 +1,38 @@
-interface IconItem {
+interface TIcon {
 	icon: string;
 	name: string;
-	href?: string;
+	url?: string;
 }
 
-interface NavigationItem extends IconItem {}
-interface SocialItem extends IconItem {}
-interface SkillItem extends IconItem {}
+export interface TNavigation extends TIcon {}
 
-export type NavigationLink = NavigationItem;
-export type SocialLink = SocialItem;
-export type Skill = SkillItem;
+export interface TSocial extends TIcon {}
 
-export type SkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
+export interface TSkill extends TIcon {}
 
-export type Skills = {
-	[key in SkillCategory]: Skill[];
-};
+export type TSkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
 
-export type Content = {
+export type TSkills = Record<TCategory, TSkill[]>;
+
+export type TContent = {
 	src: string;
 	alt: string;
-	href: string;
+	url: string;
 	title: string;
 	subtitle: string;
 	date: string;
 	info: string;
-	stack: Skill[];
+	stack: TSkill[];
+};
+
+export type TPartType = 'plain' | 'link';
+
+export type TPart = {
+	type: TPartType;
+	text: string;
+	url?: string;
+};
+
+export type TParagraph = {
+	content: string[];
 };

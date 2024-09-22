@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
-	import type { NavigationItem } from '$lib/types';
+	import type { TNavigation } from '$lib/types';
 	import { activeNav } from '$lib/stores/nav';
+	import Icon from '@iconify/svelte';
 
-	export let item: NavigationItem;
+	export let item: TNavigation;
 	export let isHovered: boolean;
 
 	$: isActive = $activeNav === item.name.toLowerCase();

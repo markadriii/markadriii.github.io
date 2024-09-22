@@ -1,13 +1,14 @@
 <script lang="ts">
-	import type { SkillItem } from '$lib/types';
+	import type { TSkill } from '$lib/types';
 	import Icon from '@iconify/svelte';
-	export let item: SkillItem;
+
+	export let item: TSkill;
 	export let iconSize = '1.5em';
 	export let textSize = 'text-sm';
 </script>
 
 <a
-	href={item.href}
+	href={item.url}
 	target="_blank"
 	class="flex w-fit items-center space-x-2 bg-tertiary-300 p-2 rounded-container-token text-on-tertiary-token hover:bg-tertiary-300/80"
 >

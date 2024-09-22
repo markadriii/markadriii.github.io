@@ -1,16 +1,15 @@
 <script lang="ts">
+	import type { TSkills, TSkillCategory } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
-	import type { Skills, SkillCategory } from '$lib/types';
 	import SkillCard from '../../common/card/skill-card.svelte';
 
-	export let data: Skills;
+	export let data: TSkills;
 	export let id: string;
-	export let spacing: string;
 
-	let categories = Object.keys(data) as SkillCategory[];
+	let categories = Object.keys(data) as TSkillCategory[];
 </script>
 
-<SectionContainer {id} {spacing} let:ContentContainer>
+<SectionContainer {id} let:ContentContainer>
 	<ContentContainer title={'Skills'}>
 		<div class="flex size-full flex-col space-y-4">
 			{#each categories as category}

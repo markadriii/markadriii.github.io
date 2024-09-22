@@ -1,11 +1,11 @@
 <script lang="ts">
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
+
 	export let data;
 	export let id: string;
-	export let spacing: string;
 </script>
 
-<SectionContainer {id} {spacing}>
+<SectionContainer {id}>
 	<article class="max-w-128 space-y-4 text-left">
 		<h1 class="text-5xl font-bold text-tertiary-300">{data.name}</h1>
 		<h3 class="animate-character text-2xl font-bold">{data.header}</h3>

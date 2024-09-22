@@ -1,3 +1,5 @@
+import type { TPart } from '$lib/types';
+
 export function getInitials(name: string): string {
 	const words = name.trim().split(/\s+/);
 
@@ -11,4 +13,24 @@ export function getInitials(name: string): string {
 	const initials = firstWord.charAt(0).toUpperCase() + lastWord.charAt(0).toUpperCase();
 
 	return initials;
+}
+
+export function parseText(paragraphs: string[]): TPart[] {
+	const regex = /\[(.*?)\]\((.*?)\)/g;
+
+	return paragraphs.map((text) => {
+		const match = regex.exec(text);
+		if (match) {
+			return {
+				type: 'link',
+				href: match[2],
+				text: match[1]
+			};
+		} else {
+			return {
+				type: 'plain',
+				text: text
+			};
+		}
+	});
 }

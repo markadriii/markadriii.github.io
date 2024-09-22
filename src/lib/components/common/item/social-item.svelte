@@ -1,9 +1,10 @@
 <script lang="ts">
-	import type { SocialItem } from '$lib/types';
+	import type { TSocial } from '$lib/types';
 	import Icon from '@iconify/svelte';
-	export let item: SocialItem;
+
+	export let item: TSocial;
 </script>
 
-<a href={item.href} class="flex items-center hover:text-primary-500">
+<a href={item.url} class="flex items-center hover:text-primary-500">
 	<Icon icon={item.icon} height="2rem" />
 </a>

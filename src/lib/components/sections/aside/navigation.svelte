@@ -1,11 +1,10 @@
 <script lang="ts">
+	import type { TNavigation } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import NavigationItem from '$lib/components/common/item/navigation-item.svelte';
-	import type { NavigationLink } from '$lib/types';
 
-	export let data: NavigationLink[];
+	export let data: TNavigation[];
 	export let id: string;
-	export let spacing: string;
 
 	let isParentHovered: boolean = false;
 	let isItemHovered: boolean = false;
@@ -25,7 +24,7 @@
 	$: isHovered = isParentHovered && isItemHovered;
 </script>
 
-<SectionContainer {id} {spacing}>
+<SectionContainer {id}>
 	<nav>
 		<ul
 			class="w-fit text-sm uppercase"
