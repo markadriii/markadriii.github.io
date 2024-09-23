@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { TSkills, TSkillCategory } from '$lib/types';
+	import type { TSkillCategory, TSkillsFormatted } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import SkillCard from '../../common/card/skill-card.svelte';
 
-	export let data: TSkills;
+	export let data: TSkillsFormatted;
 	export let id: string;
 
 	let categories = Object.keys(data) as TSkillCategory[];

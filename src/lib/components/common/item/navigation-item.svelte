@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { TNavigation } from '$lib/types';
+	import type { TIcon } from '$lib/types';
 	import { activeNav } from '$lib/stores/nav';
 	import Icon from '@iconify/svelte';
 
-	export let item: TNavigation;
+	export let item: TIcon;
 	export let isHovered: boolean;
 
 	$: isActive = $activeNav === item.name.toLowerCase();
@@ -11,7 +11,7 @@
 	$: underlineClasses = `h-[2px] transition-all duration-500 ${isActive && !isHovered ? 'w-full bg-primary-500' : 'w-0 bg-transparent group-hover:w-full group-hover:bg-primary-500'}`;
 </script>
 
-<a href="#{item.name.toLowerCase()}" class={linkClasses}>
+<a href={item.url} class={linkClasses}>
 	<Icon icon={item.icon} height="1.5rem" />
 	<div class=" flex flex-col items-start">
 		<span class="font-bold">{item.name}</span>

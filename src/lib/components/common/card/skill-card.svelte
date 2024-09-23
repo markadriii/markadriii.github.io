@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { TSkill } from '$lib/types';
+	import type { TIcon } from '$lib/types';
 	import Icon from '@iconify/svelte';
 
-	export let item: TSkill;
+	export let item: TIcon;
 	export let iconSize = '1.5em';
 	export let textSize = 'text-sm';
 </script>

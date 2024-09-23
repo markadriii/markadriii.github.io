@@ -1,7 +1,8 @@
 <script lang="ts">
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
+	import type { TProfile } from '$lib/types';
 
-	export let data;
+	export let data: TProfile;
 	export let id: string;
 </script>
 

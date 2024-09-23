@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { TContent } from '$lib/types';
+	import type { TContentFormatted } from '$lib/types';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import SkillCard from './skill-card.svelte';
 	import { getInitials } from '$lib/utils/helpers';
 
-	export let item: TContent;
+	export let item: TContentFormatted;
 </script>
 
-<a href={item.url} target="_blank" class="group rounded-container-token">
-	<article class="w-full space-y-6 px-6 py-4 rounded-container-token hover:bg-primary-500/5">
+<a href={item.url} target="_blank" class="group w-full rounded-container-token">
+	<article class="h-fit space-y-6 px-6 py-4 rounded-container-token hover:bg-primary-500/5">
 		<header class="flex space-x-8">
 			<Avatar
 				src={item.src}

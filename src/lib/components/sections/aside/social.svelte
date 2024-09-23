@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { TSocial } from '$lib/types';
+	import type { TIcon } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import SocialItem from '$lib/components/common/item/social-item.svelte';
 
-	export let data: TSocial[];
+	export let data: TIcon[];
 	export let id: string;
 </script>
 

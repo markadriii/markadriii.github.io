@@ -1,20 +1,30 @@
-interface TIcon {
+export interface TIcon {
 	icon: string;
 	name: string;
-	url?: string;
+	url: string;
 }
 
-export interface TNavigation extends TIcon {}
+export type TIconType = 'technical' | 'utility';
 
-export interface TSocial extends TIcon {}
+export type TIcons = {
+	[key in TIconType]: {
+		[key: string]: TIcon;
+	};
+};
 
-export interface TSkill extends TIcon {}
+export type TProfile = {
+	name: string;
+	header: string;
+	info: string;
+};
 
 export type TSkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
 
-export type TSkills = Record<TCategory, TSkill[]>;
+export type TSkillsRaw = Record<TCategory, string[]>;
 
-export type TContent = {
+export type TSkillsFormatted = Record<TCategory, TSkill[]>;
+
+interface TContent {
 	src: string;
 	alt: string;
 	url: string;
@@ -22,8 +32,15 @@ export type TContent = {
 	subtitle: string;
 	date: string;
 	info: string;
+}
+
+export interface TContentRaw extends TContent {
+	stack: string[];
+}
+
+export interface TContentFormatted extends TContent {
 	stack: TSkill[];
-};
+}
 
 export type TPartType = 'plain' | 'link';
 

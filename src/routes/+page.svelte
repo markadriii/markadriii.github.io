@@ -9,13 +9,11 @@
 	import Contact from '$lib/components/sections/main/contact.svelte';
 	import Credit from '$lib/components/sections/main/credit.svelte';
 	import { onDestroy, onMount } from 'svelte';
-	import { fetchData } from '$lib/utils/data';
 	import { scrollActive } from '$lib/utils/scroll';
 
-	let data: any = null;
+	export let data: any = null;
 
 	onMount(async () => {
-		data = await fetchData();
 		window.addEventListener('scroll', scrollActive);
 	});
 

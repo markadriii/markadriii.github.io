@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { TSocial } from '$lib/types';
+	import type { TIcon } from '$lib/types';
 	import Icon from '@iconify/svelte';
 
-	export let item: TSocial;
+	export let item: TIcon;
 </script>
 
 <a href={item.url} class="flex items-center hover:text-primary-500">

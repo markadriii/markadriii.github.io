@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { TNavigation } from '$lib/types';
+	import type { TIcon } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import NavigationItem from '$lib/components/common/item/navigation-item.svelte';
 
-	export let data: TNavigation[];
+	export let data: TIcon[];
 	export let id: string;
 
 	let isParentHovered: boolean = false;
