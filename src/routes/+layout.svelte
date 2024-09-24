@@ -5,6 +5,9 @@
 </script>
 
 <svelte:head>
+	<meta name="author" content={data.metadata.author} />
+	<meta name="keywords" content={data.metadata.keywords} />
+	<meta name="description" content={data.metadata.description} />
 	<title>{data.metadata.title}</title>
 
 	<link
