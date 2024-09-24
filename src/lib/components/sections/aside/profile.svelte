@@ -7,9 +7,9 @@
 </script>
 
 <SectionContainer {id}>
-	<article class="max-w-128 space-y-4 text-left">
-		<h1 class="text-5xl font-bold text-tertiary-300">{data.name}</h1>
-		<h3 class="animate-character text-2xl font-bold">{data.header}</h3>
+	<article class="space-y-4 text-left">
+		<h1 class="text-5xl font-bold tracking-tight text-tertiary-300">{data.name}</h1>
+		<h2 class="animate-character text-2xl font-bold">{data.header}</h2>
 		<p class="max-w-sm text-base leading-relaxed antialiased">
 			{data.info}
 		</p>
