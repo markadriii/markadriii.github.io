@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { TIcon } from '$lib/types';
-	import Icon from '@iconify/svelte';
+	import Icon from '../icon.svelte';
 
 	export let item: TIcon;
-	export let iconSize = '1.5em';
+	export let iconSize = 'size-6';
 	export let textSize = 'text-sm';
 </script>
 

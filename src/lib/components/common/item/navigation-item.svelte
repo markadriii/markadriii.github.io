@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { TIcon } from '$lib/types';
 	import { activeNav } from '$lib/stores/nav';
-	import Icon from '@iconify/svelte';
+	import Icon from '../icon.svelte';
 
 	export let item: TIcon;
 	export let isHovered: boolean;
@@ -12,7 +12,7 @@
 </script>
 
 <a href={item.url} class={linkClasses}>
-	<Icon icon={item.icon} height="1.5rem" />
+	<Icon color={false} icon={item.icon} height="size-6" />
 	<div class=" flex flex-col items-start">
 		<span class="font-bold">{item.name}</span>
 		<div class={underlineClasses}></div>

@@ -39,12 +39,6 @@ export function getPageData(): any {
 	return formattedData;
 }
 
-export function extractIcons(): string[] {
-	let technical = Object.values(icons.technical).map((item) => item.icon);
-	let utility = Object.values(icons.utility).map((item) => item.icon);
-	return Array.from(new Set([...technical, ...utility]));
-}
-
 function handleIcons(data: string[], type: TIconType): TIcon[] {
 	return data.map((key) => icons[type][key]);
 }
