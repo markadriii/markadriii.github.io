@@ -2,9 +2,10 @@
 	export let color = true;
 	export let icon = '';
 	export let height = '';
+	export let classes = '';
 
 	const colored = color ? 'iconify-color' : 'iconify';
-	const classes = `${colored} ${icon} ${height}`;
+	const iconClasses = `${colored} ${icon} ${height} ${classes}`;
 </script>
 
-<span class={classes}></span>
+<span class={iconClasses}></span>
