@@ -6,8 +6,6 @@
 	import Icon from '../icon.svelte';
 
 	export let item: TContentFormatted;
-
-	// icon={'mdi--arrow-top-right transform mb-1 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform'}
 </script>
 
 <div class="group relative w-full rounded-container-token">
