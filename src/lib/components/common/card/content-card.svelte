@@ -34,7 +34,7 @@
 			<ul class="flex flex-wrap items-center gap-2">
 				{#each item.stack as skill}
 					<li>
-						<SkillCard item={skill} iconSize={'1.25em'} textSize={'text-xs'} />
+						<SkillCard item={skill} iconSize={'size-5'} textSize={'text-xs'} />
 					</li>
 				{/each}
 			</ul>

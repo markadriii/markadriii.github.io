@@ -1,7 +1,8 @@
-import { join } from 'path';
 import type { Config } from 'tailwindcss';
+import { addIconSelectors } from '@iconify/tailwind';
 import { baseTheme } from './custom-theme';
 import forms from '@tailwindcss/forms';
+import { join } from 'path';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
 const config = {
@@ -12,6 +13,7 @@ const config = {
 	],
 	theme: {},
 	plugins: [
+		addIconSelectors(['devicon', 'mdi', 'logos']),
 		forms,
 		skeleton({
 			themes: {
