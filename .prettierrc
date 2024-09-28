@@ -8,6 +8,7 @@
 	"bracketSpacing": true,
 	"quoteProps": "consistent",
 	"plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+	"tailwindFunctions": ["clsx"],
 	"overrides": [
 		{
 			"files": "*.svelte",

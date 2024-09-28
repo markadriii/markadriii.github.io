@@ -1,10 +1,13 @@
 <script lang="ts">
+	import clsx from 'clsx';
+
 	export let color = true;
 	export let icon = '';
 	export let height = '';
+	export let classes = '';
 
 	const colored = color ? 'iconify-color' : 'iconify';
-	const classes = `${colored} ${icon} ${height}`;
+	const iconClasses = clsx(colored, icon, height, classes);
 </script>
 
-<span class={classes}></span>
+<span class={iconClasses}></span>
