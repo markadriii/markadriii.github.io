@@ -25,15 +25,17 @@
 </script>
 
 {#if data}
-	<div class="mx-auto grid max-w-screen-xl grid-cols-2 px-24">
-		<aside class="sticky top-0 flex max-h-screen flex-col justify-between px-8 py-20">
-			<div class="space-y-8">
-				<Profile id="profile" data={data.profile} />
-				<Navigation id="navigation" data={data.navigations} />
+	<div class="mx-auto grid max-w-screen-xl lg:grid-cols-2 lg:px-24">
+		<aside
+			class="flex max-h-screen flex-col items-start justify-between px-12 pt-20 lg:sticky lg:top-0 lg:py-20"
+		>
+			<div>
+				<Profile id="profile" data={data.profile} classes={'mb-8'} />
+				<Navigation id="navigation" data={data.navigations} classes={'hidden lg:block'} />
 			</div>
 			<Social id="social" data={data.socials} />
 		</aside>
-		<main class="space-y-16 overflow-y-auto px-8 py-20">
+		<main class="space-y-16 px-12 py-20">
 			<About id="about" data={data.about} />
 			<Skill id="skills" data={data.skills} />
 			<Experience id="experiences" data={data.experiences} />

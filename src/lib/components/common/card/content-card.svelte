@@ -8,9 +8,9 @@
 	export let item: TContentFormatted;
 </script>
 
-<div class="group relative w-full rounded-container-token">
+<div class="group relative rounded-container-token">
 	<article class="h-fit space-y-6 px-6 py-4 rounded-container-token hover:bg-primary-500/5">
-		<header class="flex space-x-8">
+		<header class="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
 			<Avatar
 				src={item.src}
 				width="w-12"
@@ -18,17 +18,19 @@
 				initials={getInitials(item.title)}
 				fill="fill-token group-hover:fill-primary-500"
 			/>
-			<div>
+			<div class="flex flex-col items-center lg:items-start">
 				<a
 					href={item.url}
 					target="_blank"
 					class="flex items-center text-tertiary-300 group-hover:text-primary-500"
-					><h2 class="mr-1 text-lg font-semibold">{item.title}</h2>
-					<Icon
-						color={false}
-						icon={'mdi--link-variant'}
-						classes={'transform group-hover:rotate-180 transition-transform duration-700'}
-					/><span class="absolute inset-0 z-0 block"></span></a
+					><h2 class="text-lg font-semibold">
+						{item.title}<Icon
+							color={false}
+							icon={'mdi--link-variant'}
+							classes={'ml-1 transform group-hover:rotate-180 transition-transform duration-700'}
+						/>
+					</h2>
+					<span class="absolute inset-0 z-0 block"></span></a
 				>
 				<h3 class="text-sm">{item.subtitle}</h3>
 			</div>

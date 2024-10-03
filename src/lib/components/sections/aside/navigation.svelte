@@ -5,6 +5,7 @@
 
 	export let data: TIcon[];
 	export let id: string;
+	export let classes: string = '';
 
 	let isParentHovered: boolean = false;
 	let isItemHovered: boolean = false;
@@ -24,7 +25,7 @@
 	$: isHovered = isParentHovered && isItemHovered;
 </script>
 
-<SectionContainer {id}>
+<SectionContainer {id} {classes}>
 	<nav>
 		<ul
 			class="w-fit text-sm uppercase"

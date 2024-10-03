@@ -9,10 +9,12 @@
 
 <SectionContainer {id} let:ContentContainer>
 	<ContentContainer title={'Experiences'}>
-		<div class="flex w-full flex-col items-start justify-center space-y-4">
+		<ul class="flex w-full flex-col items-start justify-center space-y-4">
 			{#each data as item}
-				<ContentCard {item} />
+				<li class="flex w-full items-center justify-center">
+					<ContentCard {item} />
+				</li>
 			{/each}
-		</div>
+		</ul>
 	</ContentContainer>
 </SectionContainer>

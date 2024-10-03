@@ -9,9 +9,9 @@
 
 <SectionContainer {id}>
 	<nav>
-		<ul class="flex space-x-2 text-sm uppercase">
+		<ul class="flex space-x-4 text-sm uppercase">
 			{#each data as item}
-				<li class="w-fit p-2">
+				<li class="w-fit">
 					<SocialItem {item} />
 				</li>
 			{/each}
