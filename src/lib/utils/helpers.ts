@@ -1,5 +1,10 @@
 import type { TPart } from '$lib/types';
 
+export function needsNegativeMargin(content: string[], index: number): boolean {
+	const nextElement = content[index + 1];
+	return !!nextElement && (nextElement.startsWith(',') || nextElement.startsWith('.'));
+}
+
 export function getInitials(name: string): string {
 	const words = name.trim().split(/\s+/);
 
