@@ -10,38 +10,40 @@
 
 <div class="group relative rounded-container-token">
 	<article class="h-fit space-y-6 px-6 py-4 rounded-container-token hover:bg-primary-500/5">
-		<header class="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
-			<Avatar
-				src={item.src}
-				width="w-12"
-				rounded="rounded-full"
-				initials={getInitials(item.title)}
-				fill="fill-token group-hover:fill-primary-500"
-			/>
-			<div class="flex flex-col items-center lg:items-start">
+		<header class="flex items-center space-x-4 transition-all duration-500 sm:space-x-8">
+			<div class="sm:w-24 lg:w-fit">
+				<Avatar
+					src={item.src}
+					width="w-12"
+					rounded="rounded-full"
+					initials={getInitials(item.title)}
+					fill="fill-token group-hover:fill-primary-500"
+				/>
+			</div>
+			<div class="flex flex-col items-start lg:items-start">
 				<a
 					href={item.url}
 					target="_blank"
 					class="flex items-center text-tertiary-300 group-hover:text-primary-500"
-					><h2 class="text-lg font-semibold">
+					><h2 class="text-base font-semibold sm:text-lg">
 						{item.title}<Icon
 							color={false}
 							icon={'mdi--link-variant'}
 							classes={'ml-1 transform group-hover:rotate-180 transition-transform duration-700'}
 						/>
 					</h2>
-					<span class="absolute inset-0 z-0 block"></span></a
+					<span class="absolute inset-0 z-0 hidden lg:block"></span></a
 				>
 				<h3 class="text-sm">{item.subtitle}</h3>
 			</div>
 		</header>
-		<section>
-			<p class="text-sm leading-relaxed">
-				<time class="text-xs font-semibold uppercase text-tertiary-300">{item.date}</time>
-				• {item.info}
+		<section class="space-y-2 sm:ml-32 lg:ml-0">
+			<p class="text-xs font-semibold uppercase text-tertiary-300">
+				<time>{item.date}</time>
 			</p>
+			<p class="text-sm leading-relaxed">{item.info}</p>
 		</section>
-		<footer>
+		<footer class="sm:ml-32 lg:ml-0">
 			<ul class="flex flex-wrap items-center gap-2">
 				{#each item.stack as skill}
 					<li class="z-10">
