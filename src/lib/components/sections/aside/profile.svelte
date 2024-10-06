@@ -4,11 +4,14 @@
 
 	export let data: TProfile;
 	export let id: string;
+	export let classes: string = '';
 </script>
 
-<SectionContainer {id}>
+<SectionContainer {id} {classes}>
 	<article class="space-y-4 text-left">
-		<h1 class="text-5xl font-bold tracking-tight text-tertiary-300">{data.name}</h1>
+		<h1 class="text-4xl font-bold tracking-tighter text-tertiary-300 lg:text-5xl">
+			{data.name}
+		</h1>
 		<h2 class="animate-character text-2xl font-bold">{data.header}</h2>
 		<p class="max-w-sm text-base leading-relaxed antialiased">
 			{data.info}

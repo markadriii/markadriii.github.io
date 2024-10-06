@@ -23,7 +23,14 @@
 		{:else if type === 'email'}
 			<input type="email" name={id} class="p-2 text-sm" {placeholder} bind:value required />
 		{:else if type === 'textarea'}
-			<textarea class="textarea p-2" name={id} rows="4" {placeholder} bind:value required />
+			<textarea
+				class="textarea p-2 text-sm"
+				name={id}
+				rows="4"
+				{placeholder}
+				bind:value
+				required
+			/>
 		{/if}
 	</div>
 </label>
