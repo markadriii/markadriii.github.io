@@ -31,7 +31,7 @@
 		>
 			<div>
 				<Profile id="profile" data={data.profile} classes={'mb-8'} />
-				<Navigation id="navigation" data={data.navigations} classes={'hidden lg:block'} />
+				<Navigation id="navigation" data={data.navigations} classes={'relative'} />
 			</div>
 			<Social id="social" data={data.socials} />
 		</aside>
