@@ -11,7 +11,13 @@ const config = {
 		'./src/**/*.{html,js,svelte,ts}',
 		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
-	theme: {},
+	theme: {
+		extend: {
+			fontSize: {
+				'4.5xl': ['2.8rem', { lineHeight: '1' }]
+			}
+		}
+	},
 	plugins: [
 		addIconSelectors(['devicon', 'mdi', 'logos']),
 		forms,
