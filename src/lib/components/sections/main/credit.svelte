@@ -8,7 +8,7 @@
 
 <footer {id}>
 	<article class="space-y-4 text-sm leading-relaxed">
-		{#each data as { content }}
+		{#each data as content}
 			<Paragraph {content} />
 		{/each}
 	</article>

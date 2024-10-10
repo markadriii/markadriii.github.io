@@ -12,7 +12,7 @@
 		<article
 			class="flex flex-col items-start justify-center space-y-4 leading-relaxed antialiased"
 		>
-			{#each data as { content }}
+			{#each data as content}
 				<Paragraph {content} classes="text-tertiary-300" />
 			{/each}
 		</article>

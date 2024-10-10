@@ -50,6 +50,4 @@ export type TPart = {
 	url?: string;
 };
 
-export type TParagraph = {
-	content: string[];
-};
+export type TParagraph = string[];
