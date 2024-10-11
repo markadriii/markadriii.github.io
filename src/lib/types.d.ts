@@ -1,8 +1,8 @@
-export interface TIcon {
+export type TIcon = {
 	icon: string;
 	name: string;
 	url: string;
-}
+};
 
 export type TIconType = 'technical' | 'utility';
 
@@ -33,6 +33,7 @@ interface TContent<T> {
 	date: string;
 	info: string;
 	stack: T[];
+	extra: TIcon[];
 }
 
 export type TContentRaw = TContent<string>;

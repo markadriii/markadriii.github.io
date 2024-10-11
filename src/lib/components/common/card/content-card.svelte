@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { TContentFormatted } from '$lib/types';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import SkillCard from './skill-card.svelte';
 	import { getInitials } from '$lib/utils/helpers';
 	import Icon from '../icon.svelte';
+	import ResourceCard from './resource-card.svelte';
 
 	export let item: TContentFormatted;
 </script>
@@ -45,9 +45,17 @@
 		</section>
 		<footer class="sm:ml-32 lg:ml-0">
 			<ul class="flex flex-wrap items-center gap-2">
+				{#each item.extra as resource}
+					<li class="z-10">
+						<ResourceCard item={resource} iconSize={'size-5'} textSize={'text-xs'} />
+					</li>
+				{/each}
+				{#if item.extra.length > 0}
+					<div class="h-8 w-0.5 bg-tertiary-300"></div>
+				{/if}
 				{#each item.stack as skill}
 					<li class="z-10">
-						<SkillCard item={skill} iconSize={'size-5'} textSize={'text-xs'} />
+						<ResourceCard item={skill} iconSize={'size-5'} textSize={'text-xs'} />
 					</li>
 				{/each}
 			</ul>

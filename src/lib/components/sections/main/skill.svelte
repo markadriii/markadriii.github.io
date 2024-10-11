@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { TSkillCategory, TSkillsFormatted } from '$lib/types';
 	import SectionContainer from '$lib/components/layouts/section-container.svelte';
-	import SkillCard from '../../common/card/skill-card.svelte';
+	import ResourceCard from '$lib/components/common/card/resource-card.svelte';
 
 	export let data: TSkillsFormatted;
 	export let id: string;
@@ -17,7 +17,7 @@
 					<h1 class="font-semibold">{category}:</h1>
 					<div class="flex flex-wrap justify-start gap-2">
 						{#each data[category] as item}
-							<SkillCard {item} />
+							<ResourceCard {item} />
 						{/each}
 					</div>
 				</div>

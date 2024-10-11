@@ -43,6 +43,16 @@ function handleIcons(data: string[], type: TIconType): TIcon[] {
 	return data.map((key) => icons[type][key]);
 }
 
+function handleExtraResources(data: TIcon[], type: TIconType): TIcon[] {
+	if (!data) {
+		return [];
+	}
+	return data.map((item) => ({
+		...item,
+		icon: icons[type][item.icon].icon
+	}));
+}
+
 function handleSkills(skills: TSkillsRaw): TSkillsFormatted {
 	return Object.keys(skills).reduce((formattedSkills, category) => {
 		formattedSkills[category as TSkillCategory] = handleIcons(skills[category], 'technical');
@@ -53,6 +63,7 @@ function handleSkills(skills: TSkillsRaw): TSkillsFormatted {
 function handleContent(content: TContentRaw[]): TContentFormatted[] {
 	return content.map((item) => ({
 		...item,
-		stack: handleIcons(item.stack, 'technical')
+		stack: handleIcons(item.stack, 'technical'),
+		extra: handleExtraResources(item.extra, 'technical')
 	}));
 }
