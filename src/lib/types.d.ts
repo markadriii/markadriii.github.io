@@ -22,7 +22,7 @@ export type TSkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
 
 export type TSkillsRaw = Record<TCategory, string[]>;
 
-export type TSkillsFormatted = Record<TCategory, TSkill[]>;
+export type TSkillsFormatted = Record<TCategory, TIcon[]>;
 
 interface TContent {
 	src: string;
@@ -39,7 +39,7 @@ export interface TContentRaw extends TContent {
 }
 
 export interface TContentFormatted extends TContent {
-	stack: TSkill[];
+	stack: TIcon[];
 }
 
 export type TPartType = 'plain' | 'link';
