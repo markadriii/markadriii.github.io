@@ -18,7 +18,7 @@ export type TProfile = {
 	info: string;
 };
 
-export type TSkillCategory = 'Language' | 'Framework' | 'Database' | 'Other';
+export type TSkillCategory = 'Languages' | 'Frameworks' | 'Databases' | 'Others';
 
 export type TSkillsRaw = Record<TCategory, string[]>;
 
