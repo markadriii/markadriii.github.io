@@ -9,6 +9,7 @@ export const experiences: TContentRaw[] = [
 		subtitle: 'Developer Intern',
 		date: 'Sep 2023 – Dec 2023',
 		info: 'Restructured and optimized existing conversational flows using Dialogflow CX, refined server-side operations using Python (FastAPI), and utilized JavaScript to automate tasks for improved efficiency.',
-		stack: ['dialogflow', 'fastapi', 'python', 'javascript']
+		stack: ['dialogflow', 'fastapi', 'python', 'javascript'],
+		extra: []
 	}
 ];

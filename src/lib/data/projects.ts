@@ -9,6 +9,13 @@ export const projects: TContentRaw[] = [
 		subtitle: 'Personal Project',
 		date: 'Aug 2024',
 		info: 'A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.',
-		stack: ['sveltekit', 'typescript', 'tailwindcss']
+		stack: ['sveltekit', 'typescript', 'tailwindcss'],
+		extra: [
+			{
+				icon: 'github',
+				name: 'Source',
+				url: 'https://github.com/markadriii/markadriii.github.io'
+			}
+		]
 	}
 ];
