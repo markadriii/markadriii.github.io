@@ -24,7 +24,7 @@ export type TSkillsRaw = Record<TCategory, string[]>;
 
 export type TSkillsFormatted = Record<TCategory, TIcon[]>;
 
-interface TContent {
+interface TContent<T> {
 	src: string;
 	alt: string;
 	url: string;
@@ -32,15 +32,12 @@ interface TContent {
 	subtitle: string;
 	date: string;
 	info: string;
+	stack: T[];
 }
 
-export interface TContentRaw extends TContent {
-	stack: string[];
-}
+export type TContentRaw = TContent<string>;
 
-export interface TContentFormatted extends TContent {
-	stack: TIcon[];
-}
+export type TContentFormatted = TContent<TIcon>;
 
 export type TPartType = 'plain' | 'link';
 
