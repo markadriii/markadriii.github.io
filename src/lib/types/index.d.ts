@@ -4,12 +4,8 @@ export type TIcon = {
 	url: string;
 };
 
-export type TIconType = 'technical' | 'utility';
-
-export type TIcons = {
-	[key in TIconType]: {
-		[key: string]: TIcon;
-	};
+export type TIconList = {
+	[key: string]: TIcon;
 };
 
 export type TProfile = {
@@ -40,7 +36,7 @@ export type TContentRaw = TContent<string>;
 
 export type TContentFormatted = TContent<TIcon>;
 
-export type TPartType = 'plain' | 'link';
+type TPartType = 'plain' | 'link';
 
 export type TPart = {
 	type: TPartType;

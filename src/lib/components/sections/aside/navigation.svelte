@@ -5,6 +5,7 @@
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
 	import Icon from '$lib/components/common/icon.svelte';
 	import clsx from 'clsx';
+	import { Utility } from '$lib/types/enums';
 
 	export let data: TIcon[];
 	export let id: string;
@@ -64,7 +65,7 @@
 		class="bg-surface-backdrop-token fixed right-0 top-0 z-50 flex h-16 w-screen items-center justify-end p-4 lg:hidden"
 	>
 		<button class={buttonClasses} use:popup={popupFeatured}>
-			<Icon color={false} icon={'mdi--menu'} height={'size-8'} />
+			<Icon color={false} icon={Utility.Menu} height={'size-8'} />
 		</button>
 		<div
 			class="w-fit bg-surface-800 p-4 shadow-xl ring-1 ring-inset ring-white/5 rounded-container-token"

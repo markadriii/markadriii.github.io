@@ -1,6 +1,6 @@
 <script lang="ts">
-	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 	import type { TProfile } from '$lib/types';
+	import SectionContainer from '$lib/components/layouts/section-container.svelte';
 
 	export let data: TProfile;
 	export let id: string;
@@ -9,7 +9,7 @@
 
 <SectionContainer {id} {classes}>
 	<article class="space-y-4 text-left">
-		<h1 class="md:text-4.5xl text-4xl font-bold tracking-tight text-tertiary-300">
+		<h1 class="text-4xl font-bold tracking-tight text-tertiary-300 md:text-4.5xl">
 			{data.name}
 		</h1>
 		<h2 class="animate-character text-2xl font-bold">{data.header}</h2>

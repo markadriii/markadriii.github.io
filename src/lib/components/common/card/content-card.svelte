@@ -4,6 +4,7 @@
 	import { getInitials } from '$lib/utils/helpers';
 	import Icon from '../icon.svelte';
 	import ResourceCard from './resource-card.svelte';
+	import { Utility } from '$lib/types/enums';
 
 	export let item: TContentFormatted;
 </script>
@@ -28,7 +29,7 @@
 					><h2 class="text-base font-semibold sm:text-lg">
 						{item.title}<Icon
 							color={false}
-							icon={'mdi--link-variant'}
+							icon={Utility.Link}
 							classes={'ml-1 transform group-hover:rotate-180 transition-transform duration-700'}
 						/>
 					</h2>
