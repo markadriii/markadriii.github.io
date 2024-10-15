@@ -12,8 +12,12 @@
 	import { scrollActive } from '$lib/utils/scroll';
 
 	export let data: any = null;
+	let visible = false;
 
 	onMount(async () => {
+		if (data) {
+			visible = true;
+		}
 		window.addEventListener('scroll', scrollActive);
 	});
 
@@ -24,7 +28,7 @@
 	});
 </script>
 
-{#if data}
+{#if visible}
 	<div class="mx-auto grid max-w-screen-xl px-12 md:px-20 lg:grid-cols-2 lg:gap-28 lg:px-36">
 		<aside
 			class="flex max-h-screen flex-col items-start justify-between pt-20 lg:sticky lg:top-0 lg:py-20"
