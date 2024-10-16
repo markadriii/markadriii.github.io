@@ -17,10 +17,7 @@ import { socials } from '$lib/data/socials';
 import { metadata } from '$lib/data/metadata';
 
 export function getLayoutData(): any {
-	const formattedData = {
-		metadata: metadata
-	};
-	return formattedData;
+	return metadata;
 }
 
 export function getPageData(): any {

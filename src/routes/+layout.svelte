@@ -5,46 +5,19 @@
 </script>
 
 <svelte:head>
-	<meta name="author" content={data.metadata.author} />
-	<meta name="keywords" content={data.metadata.keywords} />
-	<meta name="description" content={data.metadata.description} />
-	<title>{data.metadata.title}</title>
+	<title>{data.title}</title>
 
-	<link
-		rel="preload"
-		href="/fonts/inter/light.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="preload"
-		href="/fonts/inter/regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="preload"
-		href="/fonts/inter/medium.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="preload"
-		href="/fonts/inter/semibold.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="preload"
-		href="/fonts/inter/bold.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
+	{#each data.metadata as { name, property, content }}
+		<meta {name} {property} {content} />
+	{/each}
+
+	{#each data.favicon as { rel, href, type, sizes }}
+		<link {rel} {type} {sizes} {href} />
+	{/each}
+
+	{#each data.preload as { rel, href, as, type, crossorigin }}
+		<link {rel} {href} {as} {type} {crossorigin} />
+	{/each}
 </svelte:head>
 
 <slot></slot>
