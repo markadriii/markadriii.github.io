@@ -8,3 +8,5 @@ export const load: PageLoad = async () => {
 	const data = getLayoutData();
 	return data;
 };
+
+export const prerender = true;
