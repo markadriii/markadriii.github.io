@@ -2,12 +2,12 @@ import type { TContentRaw } from '$lib/types';
 
 export const projects: TContentRaw[] = [
 	{
-		src: '',
-		alt: '',
+		src: '/assets/content/dev_portfolio_logo.png',
+		alt: 'Developer Portfolio Logo',
 		title: 'Developer Portfolio',
-		url: 'some-link',
+		url: 'https://github.com/markadriii/markadriii.github.io',
 		subtitle: 'Personal Project',
-		date: 'Aug 2024',
+		date: 'Sep 2024',
 		info: 'A clear and informative portfolio website highlighting my development skills, professional growth, and notable projects.',
 		stack: ['sveltekit', 'typescript', 'tailwindcss'],
 		extra: [

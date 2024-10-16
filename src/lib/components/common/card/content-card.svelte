@@ -16,9 +16,9 @@
 				<Avatar
 					src={item.src}
 					width="w-12"
-					rounded="rounded-full"
+					rounded=""
 					initials={getInitials(item.title)}
-					fill="fill-token group-hover:fill-primary-500"
+					background="bg-transparent"
 				/>
 			</div>
 			<div class="flex flex-col items-start lg:items-start">
