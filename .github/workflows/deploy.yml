@@ -28,7 +28,6 @@ jobs:
 
             - name: build
               env:
-                  BASE_PATH: '/${{ github.event.repository.name }}'
                   PUBLIC_SERVICE_ID: ${{ secrets.PUBLIC_SERVICE_ID }}
                   PUBLIC_TEMPLATE_ID: ${{ secrets.PUBLIC_TEMPLATE_ID }}
                   PUBLIC_PUBLIC_KEY: ${{ secrets.PUBLIC_PUBLIC_KEY }}
