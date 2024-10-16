@@ -20,7 +20,6 @@
 		"@playwright/test": "^1.28.1",
 		"@skeletonlabs/skeleton": "^2.10.2",
 		"@skeletonlabs/tw-plugin": "^0.4.0",
-		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/forms": "^0.5.9",
@@ -46,6 +45,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@floating-ui/dom": "^1.6.11",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"clsx": "^2.1.1",
 		"dotenv": "^16.4.5"
 	}
