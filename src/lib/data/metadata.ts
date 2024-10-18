@@ -1,7 +1,9 @@
+import { getUrl } from '$lib/utils/helpers';
+
 const title = 'Mark Adrian Escobar | Developer Portfolio';
 const description =
 	'Mark Adrian Escobar is an enthusiastic developer focused on coding solutions that streamline everyday tasks and improve efficiency.';
-const url = import.meta.env.PROD ? 'https://markadriii.github.io/' : 'http://localhost:5173/';
+const url = getUrl();
 
 export const metadata = {
 	title: title,
