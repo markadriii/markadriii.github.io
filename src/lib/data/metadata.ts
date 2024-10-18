@@ -1,4 +1,4 @@
-import { getUrl } from '$lib/utils/helpers';
+import { getUrl } from '$lib/utils';
 
 const title = 'Mark Adrian Escobar | Developer Portfolio';
 const description =
