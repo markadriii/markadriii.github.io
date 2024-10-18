@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { TIcon } from '$lib/types';
-	import { activeNav } from '$lib/stores/nav';
+	import { activeNav } from '$lib/stores';
 	import Icon from '../icon.svelte';
 	import clsx from 'clsx';
 
