@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { TContentFormatted } from '$lib/types';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import { getInitials } from '$lib/utils/helpers';
+	import { getInitials } from '$lib/utils';
 	import Icon from '../icon.svelte';
 	import ResourceCard from './resource-card.svelte';
 	import { Utility } from '$lib/types/enums';

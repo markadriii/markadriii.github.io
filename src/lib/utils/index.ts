@@ -1,8 +1,14 @@
 import type { TPart } from '$lib/types';
+import { Website } from '$lib/types/enums';
+
+export function getUrl(): string {
+	return import.meta.env.PROD ? Website.Production : Website.Development;
+}
 
 export function needsNegativeMargin(content: string[], index: number): boolean {
 	const nextElement = content[index + 1];
-	return !!nextElement && (nextElement.startsWith(',') || nextElement.startsWith('.'));
+	const punctuationRegex = /^[,\.!]/;
+	return !!nextElement && punctuationRegex.test(nextElement);
 }
 
 export function getInitials(name: string): string {

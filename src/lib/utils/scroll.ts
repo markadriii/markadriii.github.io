@@ -1,4 +1,4 @@
-import { activeNav } from '$lib/stores/nav';
+import { activeNav } from '$lib/stores';
 
 export function scrollActive(): void {
 	const mainElement: HTMLElement | null = document.querySelector('main');

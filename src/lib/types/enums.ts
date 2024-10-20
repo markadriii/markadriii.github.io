@@ -38,3 +38,8 @@ export enum Utility {
 	Menu = 'mdi--menu',
 	Link = 'mdi--link-variant'
 }
+
+export enum Website {
+	Production = 'https://markadriii.github.io/',
+	Development = 'http://localhost:5173/'
+}

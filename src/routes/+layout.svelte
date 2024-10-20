@@ -11,10 +11,6 @@
 		<meta {name} {property} {content} />
 	{/each}
 
-	{#each data.favicon as { rel, href, type, sizes }}
-		<link {rel} {type} {sizes} {href} />
-	{/each}
-
 	{#each data.preload as { rel, href, as, type, crossorigin }}
 		<link {rel} {href} {as} {type} {crossorigin} />
 	{/each}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { needsNegativeMargin, parseText } from '$lib/utils/helpers';
+	import { needsNegativeMargin, parseText } from '$lib/utils';
 	import clsx from 'clsx';
 
 	export let content: string[];
