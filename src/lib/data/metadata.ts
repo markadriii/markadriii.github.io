@@ -81,42 +81,6 @@ export const metadata = {
 			content: `${url}assets/og.png`
 		}
 	],
-	// favicon from https://favicon.io/
-	favicon: [
-		{
-			rel: 'icon',
-			type: 'image/png',
-			sizes: '16x16',
-			href: '/assets/favicon/favicon-16x16.png'
-		},
-		{
-			rel: 'icon',
-			type: 'image/png',
-			sizes: '32x32',
-			href: '/assets/favicon/favicon-32x32.png'
-		},
-		{
-			rel: 'apple-touch-icon',
-			sizes: '180x180',
-			href: '/assets/favicon/apple-touch-icon.png'
-		},
-		{
-			rel: 'icon',
-			type: 'image/png',
-			sizes: '192x192',
-			href: '/assets/favicon/android-chrome-192x192.png'
-		},
-		{
-			rel: 'icon',
-			type: 'image/png',
-			sizes: '512x512',
-			href: '/assets/favicon/android-chrome-512x512.png'
-		},
-		{
-			rel: 'manifest',
-			href: '/assets/favicon/site.webmanifest'
-		}
-	],
 	// font preload
 	preload: [
 		{
