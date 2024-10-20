@@ -40,6 +40,6 @@ export enum Utility {
 }
 
 export enum Website {
-	Production = 'https://markadriii.github.io/',
-	Development = 'http://localhost:5173/'
+	Production = 'https://markadriii.github.io',
+	Development = 'http://localhost:5173'
 }

@@ -3,7 +3,7 @@ import { getUrl } from '$lib/utils';
 
 export const projects: TContentRaw[] = [
 	{
-		src: '/assets/content/dev_portfolio_logo.png',
+		src: '/content/dev_portfolio_logo.png',
 		alt: 'Developer Portfolio Logo',
 		title: 'Developer Portfolio',
 		url: getUrl(),

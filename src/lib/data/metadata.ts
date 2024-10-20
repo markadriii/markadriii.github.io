@@ -30,7 +30,7 @@ export const metadata = {
 		},
 		{
 			name: 'image',
-			content: `${url}assets/og.png`
+			content: `${url}/og.png`
 		},
 		// apple
 		{
@@ -52,7 +52,7 @@ export const metadata = {
 		},
 		{
 			property: 'og:image',
-			content: `${url}assets/og.png`
+			content: `${url}/og.png`
 		},
 		{
 			property: 'og:type',
@@ -85,7 +85,7 @@ export const metadata = {
 		},
 		{
 			property: 'twitter:image',
-			content: `${url}assets/og.png`
+			content: `${url}/og.png`
 		}
 	],
 	// font preload
