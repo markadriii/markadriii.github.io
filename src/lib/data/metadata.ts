@@ -1,5 +1,6 @@
 import { getUrl } from '$lib/utils';
 
+const name = 'Mark Adrian Escobar';
 const title = 'Mark Adrian Escobar | Developer Portfolio';
 const description =
 	'Mark Adrian Escobar is an enthusiastic developer focused on coding solutions that streamline everyday tasks and improve efficiency.';
@@ -9,13 +10,14 @@ export const metadata = {
 	title: title,
 	// metadata array
 	metadata: [
+		// common
 		{
 			name: 'title',
 			content: title
 		},
 		{
 			name: 'author',
-			content: 'Mark Adrian Escobar'
+			content: name
 		},
 		{
 			name: 'keywords',
@@ -29,6 +31,11 @@ export const metadata = {
 		{
 			name: 'image',
 			content: `${url}assets/og.png`
+		},
+		// apple
+		{
+			name: 'apple-mobile-web-app-title',
+			content: name
 		},
 		// og
 		{
@@ -117,6 +124,33 @@ export const metadata = {
 			as: 'font',
 			type: 'font/woff2',
 			crossorigin: 'anonymous'
+		}
+	],
+	// favicon links
+	favicon: [
+		{
+			rel: 'icon',
+			href: '/favicon/favicon-48x48.png',
+			type: 'image/png',
+			sizes: '48x48'
+		},
+		{
+			rel: 'icon',
+			href: '/favicon/favicon.svg',
+			type: 'image/svg+xml'
+		},
+		{
+			rel: 'shortcut icon',
+			href: '/favicon/favicon.ico'
+		},
+		{
+			rel: 'apple-touch-icon',
+			href: '/favicon/apple-touch-icon.png',
+			sizes: '180x180'
+		},
+		{
+			rel: 'manifest',
+			href: '/favicon/site.webmanifest'
 		}
 	]
 };
