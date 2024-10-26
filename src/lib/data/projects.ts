@@ -1,9 +1,10 @@
 import type { TContentRaw } from '$lib/types';
 import { getUrl } from '$lib/utils';
+import developerPortfolioLogo from '$lib/assets/dev_portfolio_logo.png';
 
 export const projects: TContentRaw[] = [
 	{
-		src: '/content/dev_portfolio_logo.png',
+		src: developerPortfolioLogo,
 		alt: 'Developer Portfolio Logo',
 		title: 'Developer Portfolio',
 		url: getUrl(),

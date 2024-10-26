@@ -1,8 +1,9 @@
 import type { TContentRaw } from '$lib/types';
+import dlsuLogo from '$lib/assets/dlsu_logo.png';
 
 export const experiences: TContentRaw[] = [
 	{
-		src: '/content/dlsu_logo.png',
+		src: dlsuLogo,
 		alt: 'DLSU Logo',
 		url: 'https://www.dlsu.edu.ph/research/research-centers/adric/te3d/',
 		title: 'TE3D House',

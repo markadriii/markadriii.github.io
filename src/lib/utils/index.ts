@@ -5,12 +5,6 @@ export function getUrl(): string {
 	return import.meta.env.PROD ? Website.Production : Website.Development;
 }
 
-export function needsNegativeMargin(content: string[], index: number): boolean {
-	const nextElement = content[index + 1];
-	const punctuationRegex = /^[,\.!]/;
-	return !!nextElement && punctuationRegex.test(nextElement);
-}
-
 export function getInitials(name: string): string {
 	const words = name.trim().split(/\s+/);
 
