@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { needsNegativeMargin, parseText } from '$lib/utils';
+	import { parseText } from '$lib/utils';
 	import clsx from 'clsx';
 
 	export let content: string[];
@@ -11,13 +11,11 @@
 		{#if part.type === 'link'}
 			<a
 				href={part.url}
-				class={clsx(classes, 'inline font-semibold hover:text-primary-500', {
-					'-mr-1': needsNegativeMargin(content, index)
-				})}
+				class={clsx(classes, 'inline font-semibold hover:text-primary-500')}
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				{part.text}
+				{part.text}&#8203;
 			</a>
 		{:else}
 			{part.text}
